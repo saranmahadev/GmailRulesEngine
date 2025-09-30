@@ -11,7 +11,7 @@ import click
 from flask import Flask
 
 from config import config
-from database import db_manager, Email
+from database import db_manager, Email, RuleApplied
 from gmail_service import create_gmail_service, GmailService
 from rules_engine import create_rules_engine, RulesEngine
 
@@ -261,7 +261,7 @@ def clear():
         session = db_manager.get_session()
         try:
             # Delete all rule applications first (foreign key constraint)
-            session.query(db_manager.RuleApplied).delete()
+            session.query(RuleApplied).delete()
             
             # Delete all emails
             count = session.query(Email).count()

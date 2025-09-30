@@ -2,6 +2,8 @@
 
 A standalone Python application that integrates with the Gmail API to perform rule-based operations on emails. 
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cXyt1kuDnxQ?si=xvCSgWgk89uriyMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 📋 Requirements & Implementation
 
 ### **Problem Statement**
