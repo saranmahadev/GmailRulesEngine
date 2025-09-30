@@ -2,7 +2,7 @@
 
 A standalone Python application that integrates with the Gmail API to perform rule-based operations on emails. 
 
-[![Youtube Video]()](https://youtu.be/cXyt1kuDnxQ)
+[![Youtube Video](./thumbnail.png)](https://youtu.be/cXyt1kuDnxQ)
 
 ## 📋 Requirements & Implementation
 
