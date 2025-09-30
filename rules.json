@@ -1,0 +1,27 @@
+{
+  "id": "github_notifications",
+  "name": "GitHub Notifications Filter",
+  "description": "Process GitHub notification emails by marking as read and moving to Important folder",
+  "predicate": "ALL",
+  "rules": [
+    {
+      "field": "from",
+      "predicate": "contains",
+      "value": "noreply@github.com"
+    },
+    {
+      "field": "subject",
+      "predicate": "does not contain",
+      "value": "release"
+    },
+    {
+      "field": "received_date",
+      "predicate": "less than",
+      "value": "7"
+    }
+  ],
+  "actions": [
+    "mark_as_read",
+    "move:Important"
+  ]
+}
